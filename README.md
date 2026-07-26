@@ -6,7 +6,7 @@ This is the official pytorch implementation of our method. The full paper is ava
 
 ## Procedure
 
-For training or validation on ACDC (2D) dataset, run the following commands:
+For training or validation on ACDC (2D) dataset, run the following commands accordingly:
 
 ```
 python ./code/train_mcnet_2d_sdf.py  --model mcnet2d_v2 --labelnum 14 --gpu 0 
@@ -20,7 +20,7 @@ python ./code/test_2d.py --exp MCNet_sdf --model mcnet2d_v1 --labelnum 7 --gpu 0
 python ./code/test_2d.py --exp MCNet_sdf --model mcnet2d_v1 --labelnum 14 --gpu 0
 
 ```
-For training or validation on LA (3D) dataset, run the following commands:
+For training or validation on LA (3D) dataset, run the following commands accordingly:
 ```
 python ./code/train_mcnet_3d_sdf.py --model mcnet3d_v2 --labelnum 16 --gpu 0 
 python ./code/train_mcnet_3d_sdf.py --model mcnet3d_v2 --labelnum 8 --gpu 0 
@@ -37,5 +37,12 @@ python ./code/test_3d.py --model mcnet3d_v1 --exp MCNet_sdf --labelnum 8 --gpu 0
 
 If you find our paper/work/code useful then please cite:
 ```http
-Anwaar, W., Manh, V., Xue, W. et al. Semi-supervised Medical Image Segmentation via Perturbation-Aware Mutual Learning and Edge-Aware Uncertainty Loss for Accurate Anatomical Delineation. Interdiscip Sci Comput Life Sci (2026). https://doi.org/10.1007/s12539-026-00862-3
+@article{anwaar2026semi,
+  title={Semi-supervised Medical Image Segmentation via Perturbation-Aware Mutual Learning and Edge-Aware Uncertainty Loss for Accurate Anatomical Delineation},
+  author={Anwaar, Waqas and Manh, Van and Xue, Wufeng and Ni, Dong},
+  journal={Interdisciplinary Sciences: Computational Life Sciences},
+  pages={1--25},
+  year={2026},
+  publisher={Springer}
+}
 ```
